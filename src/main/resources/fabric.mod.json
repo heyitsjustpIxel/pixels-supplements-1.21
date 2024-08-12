@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "pixels-supplements",
+	"version": "${version}",
+	"name": "Pixel's Supplements",
+	"description": "A mod that adds a couple of neat things that will probably never see the light of day in vanilla Minecraft. Like Rose Gold!",
+	"authors": [
+		"hijpIxel"
+	],
+	"contact": {
+		"homepage": "https://hijpixel.nekoweb.org",
+		"sources": "https://hijpixel.nekoweb.org"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/supplements/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.hijpixel.supplements.PixelsSupplements"
+		],
+		"client": [
+			"com.hijpixel.supplements.PixelsSupplementsClient"
+		],
+		"fabric-datagen": [
+			"com.hijpixel.supplements.PixelsSupplementsDataGenerator"
+		]
+	},
+	"mixins": [
+		"supplements.mixins.json",
+		{
+			"config": "supplements.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

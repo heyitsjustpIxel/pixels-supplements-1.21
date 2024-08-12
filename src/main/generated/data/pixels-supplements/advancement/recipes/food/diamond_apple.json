@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_c:storage_blocks/diamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:storage_blocks/diamond"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_enchanted_golden_apple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:enchanted_golden_apple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pixels-supplements:diamond_apple"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_enchanted_golden_apple",
+      "has_c:storage_blocks/diamond"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pixels-supplements:diamond_apple"
+    ]
+  }
+}
