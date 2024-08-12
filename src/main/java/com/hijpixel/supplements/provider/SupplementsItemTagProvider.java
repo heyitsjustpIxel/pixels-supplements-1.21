@@ -18,7 +18,6 @@ public class SupplementsItemTagProvider extends FabricTagProvider.ItemTagProvide
     }
 
     private static final TagKey<Item> SUPPLEMENTS_ITEMS_TAG = TagKey.of(RegistryKeys.ITEM, PixelsSupplements.id("supplements_items"));
-    private static final TagKey<Item> BATTLEAXE_TAG = TagKey.of(RegistryKeys.ITEM, PixelsSupplements.id("battleaxe_tag"));
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {

@@ -11,8 +11,4 @@ public class TagsList {
         public static final TagKey<Block> INCORRECT_FOR_ROSE_GOLD_TOOL =
                 TagKey.of(RegistryKeys.BLOCK, PixelsSupplements.id( "incorrect_for_rose_gold_tool"));
     }
-    public static class ToolItem {
-        public static final TagKey<Item> BATTLEAXE_TOOL =
-                TagKey.of(RegistryKeys.ITEM, PixelsSupplements.id("battleaxe_tool"));
-    }
 }
