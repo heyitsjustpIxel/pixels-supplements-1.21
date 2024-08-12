@@ -1,7 +1,21 @@
-// 1.21	2024-08-11T04:33:17.9871483	Pixel's Supplements/Recipes
+// 1.21	2024-08-12T18:59:23.5427567	Pixel's Supplements/Recipes
+f83d375bb2e2a8302df753c42e2f02323fbc4dcc data\pixels-supplements\advancement\recipes\misc\rose_gold_ingot.json
+71ef6ea92424e1e10a9eefc7a5c80c905f1c1ae8 data\pixels-supplements\recipe\rose_gold_ingot.json
+a5dc8e3b6f90949b920c7c26e60ba7e8ef0d9f6f data\pixels-supplements\advancement\recipes\tools\rose_gold_pickaxe.json
+ed3e1c67e41061ab72ad9da9edc41e30d3d6e0b9 data\pixels-supplements\recipe\rose_gold_block.json
+79219089ca938a98bff36bd7d9390d09c22bb294 data\pixels-supplements\advancement\recipes\tools\rose_gold_shovel.json
 0c587be3242ea56e757281024a886ee627665639 data\pixels-supplements\recipe\diamond_apple.json
 d0192b17ad990fc6d2dfdb56089e17455d63a1c2 data\pixels-supplements\recipe\copper_ingot.json
+abb699d00fb78a7f17bc956d0f2bbb42353c4fe0 data\pixels-supplements\recipe\rose_gold_shovel.json
 39cde6a091a31397c900f356eba702b001b81661 data\pixels-supplements\advancement\recipes\misc\copper_nugget.json
+e49e4bd04dbc3478131b4081dfb188dcdc9c704d data\pixels-supplements\recipe\rose_gold_pickaxe.json
 0f42e78043eef613ecd2bd0425c589e5238fd07e data\pixels-supplements\recipe\copper_nugget.json
 e313f37c8bc5028034c874447a184506c729722d data\pixels-supplements\advancement\recipes\misc\copper_ingot.json
+16071b9a04f0ab631fbfe3714ae60231788d307c data\pixels-supplements\advancement\recipes\building_blocks\rose_gold_block.json
+bf9837cec501d82757741897c20ec0ddff427c06 data\pixels-supplements\advancement\recipes\combat\rose_gold_sword.json
+0209e5aaab0b570a8a620850e79c95d3680e7bbb data\pixels-supplements\advancement\recipes\tools\rose_gold_axe.json
+9f00ac29262a7880b290c933284ea6960d23e698 data\pixels-supplements\advancement\recipes\tools\rose_gold_hoe.json
 a51a4261270be1c9a8046c8d97d8131c5c005592 data\pixels-supplements\advancement\recipes\food\diamond_apple.json
+53a616895ad45bf7625af4a197606373daf63749 data\pixels-supplements\recipe\rose_gold_sword.json
+4394dd0702c8bf85621cb6bb2491d7b109521a39 data\pixels-supplements\recipe\rose_gold_axe.json
+31259f2944476a7ebf1cc934e8dae2a89f824232 data\pixels-supplements\recipe\rose_gold_hoe.json

@@ -5,7 +5,11 @@
   "item.pixels-supplements.diamond_apple": "Diamond Apple",
   "item.pixels-supplements.orange": "Orange",
   "item.pixels-supplements.pepper": "Pepper",
+  "item.pixels-supplements.rose_gold_axe": "Rose Gold Axe",
+  "item.pixels-supplements.rose_gold_hoe": "Rose Gold Hoe",
   "item.pixels-supplements.rose_gold_ingot": "Rose Gold Ingot",
+  "item.pixels-supplements.rose_gold_pickaxe": "Rose Gold Pickaxe",
+  "item.pixels-supplements.rose_gold_shovel": "Rose Gold Shovel",
   "item.pixels-supplements.rose_gold_sword": "Rose Gold Sword",
   "itemGroup.pixels-supplements.supplements": "Pixel's Supplements"
 }

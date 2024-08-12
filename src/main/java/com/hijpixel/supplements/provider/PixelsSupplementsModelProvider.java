@@ -27,6 +27,10 @@ public class PixelsSupplementsModelProvider extends FabricModelProvider {
         //ROSE GOLD STUFFS
         itemModelGenerator.register(ItemInit.ROSE_GOLD_INGOT, Models.GENERATED);
         itemModelGenerator.register(ItemInit.ROSE_GOLD_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ROSE_GOLD_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ROSE_GOLD_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ROSE_GOLD_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ROSE_GOLD_HOE, Models.HANDHELD);
 
         //FOODS
         itemModelGenerator.register(ItemInit.ORANGE, Models.GENERATED);

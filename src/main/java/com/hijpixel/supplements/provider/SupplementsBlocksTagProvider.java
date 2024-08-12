@@ -12,8 +12,8 @@ import net.minecraft.registry.tag.TagKey;
 
 import java.util.concurrent.CompletableFuture;
 
-public class SupplementsTagProvider extends FabricTagProvider.BlockTagProvider {
-    public SupplementsTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class SupplementsBlocksTagProvider extends FabricTagProvider.BlockTagProvider {
+    public SupplementsBlocksTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
@@ -25,6 +25,9 @@ public class SupplementsTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(BlockInit.ROSE_GOLD_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(BlockInit.ROSE_GOLD_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS)
                 .add(BlockInit.ROSE_GOLD_BLOCK);
 
         getOrCreateTagBuilder(SUPPLEMENTS_BLOCKS_TAG)

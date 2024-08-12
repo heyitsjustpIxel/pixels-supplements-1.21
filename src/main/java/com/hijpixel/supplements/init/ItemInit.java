@@ -39,6 +39,26 @@ public class ItemInit {
                     .attributeModifiers(SwordItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 0, -2.4F))
             ));
 
+    public static final AxeItem ROSE_GOLD_AXE = register("rose_gold_axe",
+            new AxeItem(SupplementsToolsMaterial.ROSE_GOLD, new Item.Settings()
+                    .rarity(Rarity.COMMON)
+                    .attributeModifiers(AxeItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 0, -3F))));
+
+    public static final PickaxeItem ROSE_GOLD_PICKAXE = register("rose_gold_pickaxe",
+            new PickaxeItem(SupplementsToolsMaterial.ROSE_GOLD, new Item.Settings()
+                    .rarity(Rarity.COMMON)
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 0, -2.4F))));
+
+    public static final ShovelItem ROSE_GOLD_SHOVEL = register("rose_gold_shovel",
+            new ShovelItem(SupplementsToolsMaterial.ROSE_GOLD, new Item.Settings()
+                    .rarity(Rarity.COMMON)
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 0, -2.4F))));
+
+    public static final HoeItem ROSE_GOLD_HOE = register("rose_gold_hoe",
+            new HoeItem(SupplementsToolsMaterial.ROSE_GOLD, new Item.Settings()
+                    .rarity(Rarity.COMMON)
+                    .attributeModifiers(HoeItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 0, -2.4F))));
+
     //Foods
     //Orange
     public static final Item ORANGE = register("orange",
