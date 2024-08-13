@@ -1,5 +1,6 @@
 package com.hijpixel.supplements.provider;
 
+import com.hijpixel.supplements.PixelsSupplements;
 import com.hijpixel.supplements.init.BlockInit;
 import com.hijpixel.supplements.init.ItemInit;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -67,16 +68,30 @@ public class SupplementsRecipeGenerator extends FabricRecipeProvider {
         //Rose Gold Blocks to Ingots
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.ROSE_GOLD_INGOT, 9)
                 .input(ItemInit.ROSE_GOLD_BLOCK)
+                .group("rose_gold_ingot")
                 .criterion(hasItem(BlockInit.ROSE_GOLD_BLOCK), conditionsFromItem(BlockInit.ROSE_GOLD_BLOCK))
-                .offerTo(exporter);
+                .offerTo(exporter, PixelsSupplements.id("rose_gold_block_to_ingot"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.ROSE_GOLD_INGOT, 2)
+                .input('#', ItemInit.COPPER_ALLOY)
+                .input('I', Items.IRON_INGOT)
+                .input('G', Items.GOLD_INGOT)
+                .pattern("###")
+                .pattern("#IG")
+                .pattern("IG ")
+                .group("rose_gold_ingot")
+                .criterion(hasItem(ItemInit.COPPER_ALLOY), conditionsFromItem(ItemInit.COPPER_ALLOY))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, PixelsSupplements.id("rose_gold_ingot_recipe"));
 
         //ROSE GOLD SWORD
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ItemInit.ROSE_GOLD_SWORD)
                 .input('R', ItemInit.ROSE_GOLD_INGOT)
                 .input('S', ConventionalItemTags.WOODEN_RODS)
-                .pattern(" R ")
-                .pattern(" R ")
-                .pattern(" S ")
+                .pattern("R")
+                .pattern("R")
+                .pattern("S")
                 .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
                 .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
@@ -88,9 +103,22 @@ public class SupplementsRecipeGenerator extends FabricRecipeProvider {
                 .pattern(" RR")
                 .pattern(" SR")
                 .pattern(" S ")
+                .group("rose_gold_axe")
                 .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
                 .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
+
+        //ROSE GOLD AXE
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.ROSE_GOLD_AXE)
+                .input('R', ItemInit.ROSE_GOLD_INGOT)
+                .input('S', ConventionalItemTags.WOODEN_RODS)
+                .pattern(" RR")
+                .pattern(" SR")
+                .pattern(" S ")
+                .group("rose_gold_axe")
+                .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
+                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
+                .offerTo(exporter, PixelsSupplements.id("rose_gold_axe_alt"));
 
         //ROSE GOLD PICKAXE
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.ROSE_GOLD_PICKAXE)

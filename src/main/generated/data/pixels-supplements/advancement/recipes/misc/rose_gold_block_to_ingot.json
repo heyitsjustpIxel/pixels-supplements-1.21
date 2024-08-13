@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "pixels-supplements:rose_gold_ingot"
+        "recipe": "pixels-supplements:rose_gold_block_to_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "pixels-supplements:rose_gold_ingot"
+      "pixels-supplements:rose_gold_block_to_ingot"
     ]
   }
 }

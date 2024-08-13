@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    " R ",
-    " R ",
-    " S "
+    "R",
+    "R",
+    "S"
   ],
   "result": {
     "count": 1,
