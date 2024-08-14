@@ -36,28 +36,28 @@ public class ItemInit {
     public static final SwordItem ROSE_GOLD_SWORD = register("rose_gold_sword",
             new SwordItem(SupplementsToolsMaterial.ROSE_GOLD, new Item.Settings()
                     .rarity(Rarity.COMMON)
-                    .attributeModifiers(SwordItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 0, -2.4F))
+                    .attributeModifiers(SwordItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 1, -2.4F))
             ));
 
     public static final AxeItem ROSE_GOLD_AXE = register("rose_gold_axe",
             new AxeItem(SupplementsToolsMaterial.ROSE_GOLD, new Item.Settings()
                     .rarity(Rarity.COMMON)
-                    .attributeModifiers(AxeItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 0, -3F))));
+                    .attributeModifiers(AxeItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 3.5F, -3F))));
 
     public static final PickaxeItem ROSE_GOLD_PICKAXE = register("rose_gold_pickaxe",
             new PickaxeItem(SupplementsToolsMaterial.ROSE_GOLD, new Item.Settings()
                     .rarity(Rarity.COMMON)
-                    .attributeModifiers(PickaxeItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 0, -2.4F))));
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, -1.5F, -2.8F))));
 
     public static final ShovelItem ROSE_GOLD_SHOVEL = register("rose_gold_shovel",
             new ShovelItem(SupplementsToolsMaterial.ROSE_GOLD, new Item.Settings()
                     .rarity(Rarity.COMMON)
-                    .attributeModifiers(ShovelItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 0, -2.4F))));
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, -0.5F, -2.4F))));
 
     public static final HoeItem ROSE_GOLD_HOE = register("rose_gold_hoe",
             new HoeItem(SupplementsToolsMaterial.ROSE_GOLD, new Item.Settings()
                     .rarity(Rarity.COMMON)
-                    .attributeModifiers(HoeItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, 0, -2.4F))));
+                    .attributeModifiers(HoeItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, -4, -1F))));
 
     //Foods
     //Orange

@@ -16,7 +16,7 @@ public class ItemGroupsInit {
     public static final ItemGroup PIXELS_SUPPLEMENTS =
             register("pixels_supplements", FabricItemGroup.builder()
                     .displayName(SUPPLEMENTS)
-                    .icon(ItemInit.DIAMOND_APPLE::getDefaultStack)
+                    .icon(ItemInit.ROSE_GOLD_BLOCK::getDefaultStack)
                     .entries(((displayContext, entries) -> Registries.ITEM.getIds()
                             .stream()
                             .filter(key -> key.getNamespace().equals(PixelsSupplements.MOD_ID))

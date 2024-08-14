@@ -9,9 +9,9 @@ import net.minecraft.registry.tag.TagKey;
 
 public enum SupplementsToolsMaterial implements ToolMaterial {
 
-    ROSE_GOLD( 215,
+    ROSE_GOLD( 228,
             1.6F,
-            5,
+            4,
             TagsList.Blocks.INCORRECT_FOR_ROSE_GOLD_TOOL,
             10,
             Ingredient.ofItems(ItemInit.ROSE_GOLD_INGOT)

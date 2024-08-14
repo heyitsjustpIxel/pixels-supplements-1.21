@@ -6,4 +6,5 @@
   - The Diamond Apple must be crafted using an ***Enchanted Golden Apple*** and 8 ***Blocks of Diamond***.
 - Two new Copper items: the **Copper Alloy** and the **Copper Nugget**.
   - The Copper Alloy is required to craft Rose Gold Ingots!
-- An all-new type of mineral: ***Rose Gold***, made by crafting a Copper Alloy with two Iron Ingots and two Gold Ingots.
+- An all-new type of mineral: ***Rose Gold***; its ingot is made with two Copper Alloys, two Iron Ingots and two Gold Ingots.
+- WIP

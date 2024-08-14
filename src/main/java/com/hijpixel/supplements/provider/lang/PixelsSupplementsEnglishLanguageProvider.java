@@ -35,7 +35,7 @@ public class PixelsSupplementsEnglishLanguageProvider extends FabricLanguageProv
         translationBuilder.add(ItemInit.COPPER_ALLOY, "Copper Alloy");
 
         translationBuilder.add(ItemInit.ROSE_GOLD_INGOT, "Rose Gold Ingot");
-        translationBuilder.add(BlockInit.ROSE_GOLD_BLOCK, "Rose Gold Block");
+        translationBuilder.add(BlockInit.ROSE_GOLD_BLOCK, "Block of Rose Gold");
         translationBuilder.add(ItemInit.ROSE_GOLD_SWORD, "Rose Gold Sword");
         translationBuilder.add(ItemInit.ROSE_GOLD_AXE, "Rose Gold Axe");
         translationBuilder.add(ItemInit.ROSE_GOLD_PICKAXE, "Rose Gold Pickaxe");

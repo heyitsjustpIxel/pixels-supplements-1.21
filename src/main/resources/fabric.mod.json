@@ -12,7 +12,7 @@
 		"sources": "https://hijpixel.nekoweb.org"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/supplements/icon.png",
+	"icon": "assets/pixels-supplements/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

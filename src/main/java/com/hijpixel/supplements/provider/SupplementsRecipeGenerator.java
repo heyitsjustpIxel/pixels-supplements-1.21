@@ -72,13 +72,12 @@ public class SupplementsRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(BlockInit.ROSE_GOLD_BLOCK), conditionsFromItem(BlockInit.ROSE_GOLD_BLOCK))
                 .offerTo(exporter, PixelsSupplements.id("rose_gold_block_to_ingot"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.ROSE_GOLD_INGOT, 2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.ROSE_GOLD_INGOT)
                 .input('#', ItemInit.COPPER_ALLOY)
                 .input('I', Items.IRON_INGOT)
                 .input('G', Items.GOLD_INGOT)
-                .pattern("###")
-                .pattern("#IG")
-                .pattern("IG ")
+                .pattern("##I")
+                .pattern("IGG")
                 .group("rose_gold_ingot")
                 .criterion(hasItem(ItemInit.COPPER_ALLOY), conditionsFromItem(ItemInit.COPPER_ALLOY))
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
@@ -92,6 +91,7 @@ public class SupplementsRecipeGenerator extends FabricRecipeProvider {
                 .pattern("R")
                 .pattern("R")
                 .pattern("S")
+                .group("rose_gold_sword")
                 .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
                 .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
@@ -107,18 +107,6 @@ public class SupplementsRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
                 .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
-
-        //ROSE GOLD AXE
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.ROSE_GOLD_AXE)
-                .input('R', ItemInit.ROSE_GOLD_INGOT)
-                .input('S', ConventionalItemTags.WOODEN_RODS)
-                .pattern(" RR")
-                .pattern(" SR")
-                .pattern(" S ")
-                .group("rose_gold_axe")
-                .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
-                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
-                .offerTo(exporter, PixelsSupplements.id("rose_gold_axe_alt"));
 
         //ROSE GOLD PICKAXE
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.ROSE_GOLD_PICKAXE)
@@ -127,6 +115,7 @@ public class SupplementsRecipeGenerator extends FabricRecipeProvider {
                 .pattern("RRR")
                 .pattern(" S ")
                 .pattern(" S ")
+                .group("rose_gold_pickaxe")
                 .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
                 .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
@@ -138,6 +127,7 @@ public class SupplementsRecipeGenerator extends FabricRecipeProvider {
                 .pattern("R")
                 .pattern("S")
                 .pattern("S")
+                .group("rose_gold_shovel")
                 .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
                 .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
@@ -149,9 +139,11 @@ public class SupplementsRecipeGenerator extends FabricRecipeProvider {
                 .pattern(" RR")
                 .pattern(" S ")
                 .pattern(" S ")
+                .group("rose_gold_hoe")
                 .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
                 .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
+
 
     }
 

@@ -37,6 +37,14 @@ public class PixelsSupplements implements ModInitializer {
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
 			entries.addAfter(Items.GOLDEN_SWORD, ItemInit.ROSE_GOLD_SWORD);
+			entries.addAfter(Items.GOLDEN_AXE, ItemInit.ROSE_GOLD_AXE);
+		});
+
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+			entries.addAfter(Items.GOLDEN_HOE, ItemInit.ROSE_GOLD_SHOVEL);
+			entries.addAfter(ItemInit.ROSE_GOLD_SHOVEL, ItemInit.ROSE_GOLD_PICKAXE);
+			entries.addAfter(ItemInit.ROSE_GOLD_PICKAXE, ItemInit.ROSE_GOLD_AXE);
+			entries.addAfter(ItemInit.ROSE_GOLD_AXE, ItemInit.ROSE_GOLD_HOE);
 		});
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
