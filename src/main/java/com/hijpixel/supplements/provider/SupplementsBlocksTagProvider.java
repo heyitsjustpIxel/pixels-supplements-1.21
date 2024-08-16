@@ -27,6 +27,7 @@ public class SupplementsBlocksTagProvider extends FabricTagProvider.BlockTagProv
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(BlockInit.ROSE_GOLD_BLOCK);
 
+
         getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS)
                 .add(BlockInit.ROSE_GOLD_BLOCK);
 

@@ -36,8 +36,38 @@ public class SupplementsItemTagProvider extends FabricTagProvider.ItemTagProvide
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ItemInit.ROSE_GOLD_HOE);
 
-        //getOrCreateTagBuilder(BATTLEAXE_TAG)
-                //.add(ItemInit.ROSE_GOLD_BATTLEAXE);
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
+                .add(ItemInit.ROSE_GOLD_HELMET);
+
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE)
+                .add(ItemInit.ROSE_GOLD_HELMET);
+
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
+                .add(ItemInit.ROSE_GOLD_CHESTPLATE);
+
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+                .add(ItemInit.ROSE_GOLD_CHESTPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
+                .add(ItemInit.ROSE_GOLD_LEGGINGS);
+
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR_ENCHANTABLE)
+                .add(ItemInit.ROSE_GOLD_LEGGINGS);
+
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
+                .add(ItemInit.ROSE_GOLD_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR_ENCHANTABLE)
+                .add(ItemInit.ROSE_GOLD_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ItemInit.ROSE_GOLD_HELMET)
+                .add(ItemInit.ROSE_GOLD_CHESTPLATE)
+                .add(ItemInit.ROSE_GOLD_LEGGINGS)
+                .add(ItemInit.ROSE_GOLD_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ItemInit.ROSE_GOLD_INGOT);
 
         getOrCreateTagBuilder(SUPPLEMENTS_ITEMS_TAG)
                 .add(ItemInit.ROSE_GOLD_INGOT)
@@ -46,10 +76,15 @@ public class SupplementsItemTagProvider extends FabricTagProvider.ItemTagProvide
                 .add(ItemInit.ROSE_GOLD_PICKAXE)
                 .add(ItemInit.ROSE_GOLD_SHOVEL)
                 .add(ItemInit.ROSE_GOLD_HOE)
+                .add(ItemInit.ROSE_GOLD_HELMET)
+                .add(ItemInit.ROSE_GOLD_CHESTPLATE)
+                .add(ItemInit.ROSE_GOLD_LEGGINGS)
+                .add(ItemInit.ROSE_GOLD_BOOTS)
                 .add(ItemInit.COPPER_ALLOY)
                 .add(ItemInit.COPPER_NUGGET)
                 .add(ItemInit.DIAMOND_APPLE)
                 .add(ItemInit.ORANGE)
-                .add(ItemInit.PEPPER);
+                .add(ItemInit.PEPPER)
+                .add(ItemInit.ROSE_GOLD_APPLE);
     }
 }

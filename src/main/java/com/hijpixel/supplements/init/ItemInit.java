@@ -3,6 +3,7 @@ package com.hijpixel.supplements.init;
 import com.hijpixel.supplements.PixelsSupplements;
 import com.hijpixel.supplements.enums.SupplementsToolsMaterial;
 import com.hijpixel.supplements.lists.FoodList;
+import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -59,6 +60,22 @@ public class ItemInit {
                     .rarity(Rarity.COMMON)
                     .attributeModifiers(HoeItem.createAttributeModifiers(SupplementsToolsMaterial.ROSE_GOLD, -4, -1F))));
 
+    public static final ArmorItem ROSE_GOLD_HELMET = register("rose_gold_helmet",
+            new ArmorItem(ArmorMaterialInit.ROSE_GOLD, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+
+    public static final ArmorItem ROSE_GOLD_CHESTPLATE = register("rose_gold_chestplate",
+            new ArmorItem(ArmorMaterialInit.ROSE_GOLD, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+
+    public static final ArmorItem ROSE_GOLD_LEGGINGS= register("rose_gold_leggings",
+            new ArmorItem(ArmorMaterialInit.ROSE_GOLD, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+
+    public static final ArmorItem ROSE_GOLD_BOOTS= register("rose_gold_boots",
+            new ArmorItem(ArmorMaterialInit.ROSE_GOLD, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
     //Foods
     //Orange
     public static final Item ORANGE = register("orange",
@@ -71,11 +88,18 @@ public class ItemInit {
                     .rarity(Rarity.COMMON)
                     .food(FoodList.PEPPER)));
 
+    //Rose Gold Apple
+    public static final Item ROSE_GOLD_APPLE = register("rose_gold_apple",
+            new Item(new Item.Settings()
+                    .rarity(Rarity.UNCOMMON)
+                    .food(FoodList.ROSE_GOLD_APPLE)
+            ));
 
     //Diamond Apple
     public static final Item DIAMOND_APPLE = register("diamond_apple",
             new Item(new Item.Settings()
                     .rarity(Rarity.EPIC)
+                    .component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
                     .food(FoodList.DIAMOND_APPLE)));
 
     public static <T extends Item> T register(String name, T item) {

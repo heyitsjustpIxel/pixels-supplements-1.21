@@ -13,7 +13,7 @@ public class ItemGroupsInit {
     public static final Text SUPPLEMENTS =
             Text.translatable("itemGroup." + PixelsSupplements.MOD_ID + ".supplements");
 
-    public static final ItemGroup PIXELS_SUPPLEMENTS =
+    public static final ItemGroup supplements =
             register("pixels_supplements", FabricItemGroup.builder()
                     .displayName(SUPPLEMENTS)
                     .icon(ItemInit.ROSE_GOLD_BLOCK::getDefaultStack)

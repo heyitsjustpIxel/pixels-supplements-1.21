@@ -7,6 +7,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.Item;
 
 public class PixelsSupplementsModelProvider extends FabricModelProvider {
     public PixelsSupplementsModelProvider(FabricDataOutput output) {
@@ -32,9 +34,15 @@ public class PixelsSupplementsModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.ROSE_GOLD_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.ROSE_GOLD_HOE, Models.HANDHELD);
 
+        itemModelGenerator.registerArmor(((ArmorItem) ItemInit.ROSE_GOLD_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ItemInit.ROSE_GOLD_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ItemInit.ROSE_GOLD_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ItemInit.ROSE_GOLD_BOOTS));
+
         //FOODS
         itemModelGenerator.register(ItemInit.ORANGE, Models.GENERATED);
         itemModelGenerator.register(ItemInit.PEPPER, Models.GENERATED);
         itemModelGenerator.register(ItemInit.DIAMOND_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ROSE_GOLD_APPLE, Models.GENERATED);
     }
 }

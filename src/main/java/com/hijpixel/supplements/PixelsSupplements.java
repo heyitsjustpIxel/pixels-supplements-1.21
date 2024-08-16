@@ -1,5 +1,6 @@
 package com.hijpixel.supplements;
 
+import com.hijpixel.supplements.init.ArmorMaterialInit;
 import com.hijpixel.supplements.init.BlockInit;
 import com.hijpixel.supplements.init.ItemGroupsInit;
 import com.hijpixel.supplements.init.ItemInit;
@@ -25,19 +26,22 @@ public class PixelsSupplements implements ModInitializer {
 		//LOAD THIS SHIT!!
 		LOGGER.info("CRAFTING ITEMS...");
 		ItemInit.load();
+		ArmorMaterialInit.load();
 		LOGGER.info("CRAFTING BLOCKS...");
 		BlockInit.load();
 		LOGGER.info("GROUPING ITEMS...");
 		ItemGroupsInit.load();
 
 		LOGGER.info("REARRANGING ITEMS...");
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-			entries.addAfter(Items.GOLD_BLOCK, ItemInit.ROSE_GOLD_BLOCK);
-		});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> entries.addAfter(Items.GOLD_BLOCK, ItemInit.ROSE_GOLD_BLOCK));
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
 			entries.addAfter(Items.GOLDEN_SWORD, ItemInit.ROSE_GOLD_SWORD);
 			entries.addAfter(Items.GOLDEN_AXE, ItemInit.ROSE_GOLD_AXE);
+			entries.addAfter(Items.GOLDEN_BOOTS, ItemInit.ROSE_GOLD_HELMET);
+			entries.addAfter(ItemInit.ROSE_GOLD_HELMET, ItemInit.ROSE_GOLD_CHESTPLATE);
+			entries.addAfter(ItemInit.ROSE_GOLD_CHESTPLATE, ItemInit.ROSE_GOLD_LEGGINGS);
+			entries.addAfter(ItemInit.ROSE_GOLD_LEGGINGS, ItemInit.ROSE_GOLD_BOOTS);
 		});
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
@@ -56,6 +60,7 @@ public class PixelsSupplements implements ModInitializer {
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
 			entries.addAfter(Items.GLOW_BERRIES, ItemInit.ORANGE);
 			entries.addAfter(Items.DRIED_KELP , ItemInit.PEPPER);
+			entries.addAfter(Items.GOLDEN_APPLE, ItemInit.ROSE_GOLD_APPLE);
 			entries.addAfter(Items.ENCHANTED_GOLDEN_APPLE, ItemInit.DIAMOND_APPLE);
 		});
 

@@ -6,10 +6,15 @@
     "pixels-supplements:rose_gold_pickaxe",
     "pixels-supplements:rose_gold_shovel",
     "pixels-supplements:rose_gold_hoe",
+    "pixels-supplements:rose_gold_helmet",
+    "pixels-supplements:rose_gold_chestplate",
+    "pixels-supplements:rose_gold_leggings",
+    "pixels-supplements:rose_gold_boots",
     "pixels-supplements:copper_alloy",
     "pixels-supplements:copper_nugget",
     "pixels-supplements:diamond_apple",
     "pixels-supplements:orange",
-    "pixels-supplements:pepper"
+    "pixels-supplements:pepper",
+    "pixels-supplements:rose_gold_apple"
   ]
 }

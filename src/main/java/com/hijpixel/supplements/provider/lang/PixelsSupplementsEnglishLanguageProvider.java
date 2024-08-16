@@ -9,7 +9,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableTextContent;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -19,7 +18,7 @@ public class PixelsSupplementsEnglishLanguageProvider extends FabricLanguageProv
         super(dataOutput, registryLookup);
     }
 
-    private static void addTabText(@NotNull TranslationBuilder builder, @NotNull Text text, @NotNull String value) {
+    private static void addTabText(TranslationBuilder builder, Text text, String value) {
         if(text.getContent() instanceof TranslatableTextContent) {
             builder.add(((TranslatableTextContent) text.getContent()).getKey(), value);
         } else {
@@ -36,14 +35,21 @@ public class PixelsSupplementsEnglishLanguageProvider extends FabricLanguageProv
 
         translationBuilder.add(ItemInit.ROSE_GOLD_INGOT, "Rose Gold Ingot");
         translationBuilder.add(BlockInit.ROSE_GOLD_BLOCK, "Block of Rose Gold");
+
         translationBuilder.add(ItemInit.ROSE_GOLD_SWORD, "Rose Gold Sword");
         translationBuilder.add(ItemInit.ROSE_GOLD_AXE, "Rose Gold Axe");
         translationBuilder.add(ItemInit.ROSE_GOLD_PICKAXE, "Rose Gold Pickaxe");
         translationBuilder.add(ItemInit.ROSE_GOLD_SHOVEL, "Rose Gold Shovel");
         translationBuilder.add(ItemInit.ROSE_GOLD_HOE, "Rose Gold Hoe");
 
+        translationBuilder.add(ItemInit.ROSE_GOLD_HELMET, "Rose Gold Helmet");
+        translationBuilder.add(ItemInit.ROSE_GOLD_CHESTPLATE, "Rose Gold Chestplate");
+        translationBuilder.add(ItemInit.ROSE_GOLD_LEGGINGS, "Rose Gold Leggings");
+        translationBuilder.add(ItemInit.ROSE_GOLD_BOOTS, "Rose Gold Boots");
+
         //Foods
         translationBuilder.add(ItemInit.ORANGE, "Orange");
+        translationBuilder.add(ItemInit.ROSE_GOLD_APPLE, "Rose Gold Apple");
         translationBuilder.add(ItemInit.DIAMOND_APPLE, "Diamond Apple");
         translationBuilder.add(ItemInit.PEPPER, "Pepper");
 

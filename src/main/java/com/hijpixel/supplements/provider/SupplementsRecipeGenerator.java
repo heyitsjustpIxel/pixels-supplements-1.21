@@ -144,6 +144,92 @@ public class SupplementsRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ItemInit.ROSE_GOLD_HELMET)
+                .input('E', ItemInit.ROSE_GOLD_INGOT)
+                .pattern(" EEE")
+                .pattern(" E E")
+                .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ItemInit.ROSE_GOLD_CHESTPLATE)
+                .input('E', ItemInit.ROSE_GOLD_INGOT)
+                .pattern(" E E")
+                .pattern(" EEE")
+                .pattern(" EEE")
+                .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ItemInit.ROSE_GOLD_LEGGINGS)
+                .input('E', ItemInit.ROSE_GOLD_INGOT)
+                .pattern(" EEE")
+                .pattern(" E E")
+                .pattern(" E E")
+                .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ItemInit.ROSE_GOLD_BOOTS)
+                .input('E', ItemInit.ROSE_GOLD_INGOT)
+                .pattern(" E E")
+                .pattern(" E E")
+                .criterion(hasItem(ItemInit.ROSE_GOLD_INGOT), conditionsFromItem(ItemInit.ROSE_GOLD_INGOT))
+                .offerTo(exporter);
+
+        //VANILLA ADDITIONS
+        //CHAINMAIL ARMOR
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.CHAINMAIL_HELMET)
+                .input('C', Items.CHAIN)
+                .pattern("CCC")
+                .pattern("C C")
+                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.CHAINMAIL_CHESTPLATE)
+                .input('C', Items.CHAIN)
+                .pattern("C C")
+                .pattern("CCC")
+                .pattern("CCC")
+                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.CHAINMAIL_LEGGINGS)
+                .input('C', Items.CHAIN)
+                .pattern("CCC")
+                .pattern("C C")
+                .pattern("C C")
+                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.CHAINMAIL_BOOTS)
+                .input('C', Items.CHAIN)
+                .pattern("C C")
+                .pattern("C C")
+                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+                .offerTo(exporter);
+
+
+        //HORSE ARMOR
+        //IRON HORSE ARMOR
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, Items.IRON_HORSE_ARMOR)
+                .input('X', Items.IRON_INGOT)
+                .input('O', Items.LEATHER)
+                .pattern("X X")
+                .pattern("XOX")
+                .pattern("X X")
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
+                .offerTo(exporter);
+
+        //IRON HORSE ARMOR
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, Items.GOLDEN_HORSE_ARMOR)
+                .input('X', Items.GOLD_INGOT)
+                .input('O', Items.LEATHER)
+                .pattern("X X")
+                .pattern("XOX")
+                .pattern("X X")
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
+                .offerTo(exporter);
+
 
     }
 
